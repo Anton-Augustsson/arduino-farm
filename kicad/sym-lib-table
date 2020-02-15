@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name arduino-farm-rescue)(type Legacy)(uri ${KIPRJMOD}/arduino-farm-rescue.lib)(options "")(descr ""))
+)
