@@ -129,7 +129,7 @@ $EndComp
 Text GLabel 1150 3100 0    50   Input ~ 0
 REL_1
 Text GLabel 1550 1900 1    50   Input ~ 0
-+5V
++12V
 $Comp
 L arduino-farm-rescue:Screw_Terminal_01x06-Connector J3
 U 1 1 5D120C1C
@@ -163,7 +163,6 @@ Text GLabel 2150 2900 2    50   Input ~ 0
 sensor_6
 NoConn ~ 2150 2300
 NoConn ~ 2150 2400
-NoConn ~ 1850 1900
 NoConn ~ 2150 2700
 NoConn ~ 1150 3200
 NoConn ~ 1150 3300
@@ -992,28 +991,14 @@ F 3 "~" H 4950 5800 50  0001 C CNN
 	1    4950 5800
 	0    -1   -1   0   
 $EndComp
-Text GLabel 6300 5800 2    50   Input ~ 0
+Text GLabel 1850 1900 1    50   Input ~ 0
 +5V
 Text GLabel 5600 5700 1    50   Input ~ 0
 +12V
-$Comp
-L arduino-farm-rescue:GND-power #PWR012
-U 1 1 5D4B9E75
-P 6000 6100
-F 0 "#PWR012" H 6000 5850 50  0001 C CNN
-F 1 "GND" H 6005 5927 50  0000 C CNN
-F 2 "" H 6000 6100 50  0001 C CNN
-F 3 "" H 6000 6100 50  0001 C CNN
-	1    6000 6100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 5800 5600 5800
 Wire Wire Line
 	5600 5700 5600 5800
-Connection ~ 5600 5800
-Wire Wire Line
-	5600 5800 5700 5800
 Text GLabel 3400 6650 1    50   Input ~ 0
 solinoide_1
 Wire Wire Line
@@ -1065,15 +1050,4 @@ Wire Wire Line
 	4600 5800 4800 5800
 Wire Wire Line
 	4600 5800 4300 5800
-$Comp
-L arduino-farm-rescue:L78L06_TO92-Regulator_Linear U1
-U 1 1 5D5BA0EB
-P 6000 5800
-F 0 "U1" H 6000 6042 50  0000 C CNN
-F 1 "L78L06_TO92" H 6000 5951 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6000 6025 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 6000 5750 50  0001 C CNN
-	1    6000 5800
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
